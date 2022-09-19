@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+//
     private void init()
     {
         slider1 = findViewById(R.id.slider1);
