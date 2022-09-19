@@ -72,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
         tw4 = findViewById(R.id.tw4);
         mainLayout = findViewById(R.id.mainLayout);
         coloredLayout = findViewById(R.id.coloredLayout);
+        redValue=(int) slider1.getValue();
+        greenValue=(int) slider2.getValue();
+        blueValue=(int) slider3.getValue();
     }
 
     private String colorToString(int r, int g, int b) {

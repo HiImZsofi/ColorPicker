@@ -16,6 +16,8 @@
         android:layout_width="275dp"
         android:layout_height="69dp"
         android:id="@+id/slider1"
+        android:valueFrom="0.0"
+        android:valueTo="255.0"
         >
 
     </com.google.android.material.slider.Slider>
@@ -24,7 +26,9 @@
         android:id="@+id/slider2"
         android:layout_width="275dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tw1">
+        android:layout_below="@+id/tw1"
+        android:valueFrom="0.0"
+        android:valueTo="255.0">
     </com.google.android.material.slider.Slider>
 
     <com.google.android.material.slider.Slider
@@ -32,7 +36,8 @@
         android:layout_width="275dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tw2"
-        android:value="@color/purple_200">
+        android:valueFrom="0.0"
+        android:valueTo="255.0">
     </com.google.android.material.slider.Slider>
 
     <TextView
