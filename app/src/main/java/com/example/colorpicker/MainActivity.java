@@ -39,6 +39,26 @@ public class MainActivity extends AppCompatActivity {
                 coloredLayout.setBackgroundColor(Color.rgb(redValue, greenValue, blueValue));
             }
         });
+
+        slider2.addOnChangeListener(new Slider.OnChangeListener() {
+            @Override
+            public void onValueChange(@NonNull Slider slider, float value, boolean fromUser) {
+                greenValue = (int) slider2.getValue();
+                tw2.setText("Zöld: " + greenValue);
+                tw4.setText(colorToString(redValue, greenValue, blueValue));
+                coloredLayout.setBackgroundColor(Color.rgb(redValue, greenValue, blueValue));
+            }
+        });
+
+        slider3.addOnChangeListener(new Slider.OnChangeListener() {
+            @Override
+            public void onValueChange(@NonNull Slider slider, float value, boolean fromUser) {
+                blueValue = (int) slider3.getValue();
+                tw3.setText("Kék: " + blueValue);
+                tw4.setText(colorToString(redValue, greenValue, blueValue));
+                coloredLayout.setBackgroundColor(Color.rgb(redValue, greenValue, blueValue));
+            }
+        });
     }
 
     private void init()
